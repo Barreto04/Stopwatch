@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --stopwatch-primary-color: #780000;
+    --stopwatch-primary-shade:  #C1121F;
+    --stopwatch-secondary-color: #003049;
+    --stopwatch-secondary-shade: #669BBC;
+    --stopwatch-ligth-color: #f5f3f4;
+    --stopwatch-background-color: #FDF0D5;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    border: 3px solid var(--stopwatch-ligth-color);
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: var(--stopwatch-secondary-color);
+    color: #ffffff;
+}
+
+button.secondary-button {
+    background-color: var(--stopwatch-primary-color);
+    color: var(--stopwatch-ligth-color);
+}
+
+button:hover {
+    background-color: var(--stopwatch-secondary-shade);
+}
+
+button.secondary-button:hover {
+    background-color: var(--stopwatch-primary-shade);
+}
+
+button:focus {
+    border: 3px solid #000000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: var(--stopwatch-background-color);
+    font-size: 3rem;
+}
+
+#stopwatch-wrapper {
+    background-color: var(--stopwatch-secondary-color);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.button-box {
+    margin: 1rem 0 0.5rem 0;
+}
+
+#stopwatch-wrapper > p {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    padding: 0rem 0;
+    border-radius: 10px;
+}
